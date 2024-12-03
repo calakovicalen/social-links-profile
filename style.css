@@ -22,7 +22,6 @@ main {
   background: #1f1f1f;
   border-radius: 12px;
   width: 327px;
-  height: 579px;
 }
 
 .image-container {
@@ -71,13 +70,6 @@ main {
   text-align: center;
 }
 
-.links-container a:hover,
-.links-container a:focus {
-  background: #c4f82a;
-  color: #333333;
-  outline: none;
-}
-
 .links-container a {
   text-decoration: none;
   color: #ffffff;
@@ -89,13 +81,21 @@ main {
   width: 100%;
   cursor: pointer;
   transition: all 0.1s ease-in;
+  line-height: 150%;
 }
 
-@media (min-width: 768px) and (max-width: 1024px) {
+.links-container a:hover,
+.links-container a:focus {
+  background: #c4f82a;
+  color: #333333;
+  outline: none;
+}
+
+@media (min-width: 768px) {
   main {
+    padding: 40px;
     width: 456px;
     max-width: 456px;
-    height: 611px;
   }
 }
 
@@ -103,6 +103,5 @@ main {
   main {
     width: 384px;
     max-width: 384px;
-    height: 611px;
   }
 }
